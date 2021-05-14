@@ -22,6 +22,14 @@ let sum = a;
 return sum;
 }
 
+function sum(...numbers) {
+    let sum = 0;   
+   for (let i = 0; i < numbers.length; i++) {
+   sum += numbers[i]; 
+    }
+return sum;
+}
+
 function multiply (a, b, ...numbers) {
  let product = a * b;
     for (let i = 0; i < numbers.length; i++) {
