@@ -35,9 +35,15 @@ function power(a, b) {
 return a**b;	
 }
 
-function factorial() {
-	
+function factorial(number) {
+	let result = number;
+	while (number > 1) {
+		result *= number - 1;
+		number--;
+        }
+	return result;
 }
+
 
 module.exports = {
 	add,
