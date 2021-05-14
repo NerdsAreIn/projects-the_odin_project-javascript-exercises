@@ -14,16 +14,8 @@ function subtract (a, b, ...numbers) {
 return difference;
 }
 
-function sum(a, ...numbers) {
-let sum = a;
-    for (let i = 0; i < numbers.length; i++) {
-   sum += numbers[i]; 
-    }
-return sum;
-}
-
-function sum(...numbers) {
-    let sum = 0;   
+function sum(numbers) {
+   let sum = 0;
    for (let i = 0; i < numbers.length; i++) {
    sum += numbers[i]; 
     }
