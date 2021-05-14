@@ -22,16 +22,17 @@ function sum(numbers) {
 return sum;
 }
 
-function multiply (a, b, ...numbers) {
- let product = a * b;
-    for (let i = 0; i < numbers.length; i++) {
+function multiply(numbers) {
+let i = 0;
+let product = numbers[i];
+    for (i = 1; i < numbers.length; i++) {
    product *= numbers[i]; 
     }
 return product;
 }
 
-function power() {
-	
+function power(a, b) {
+return a**b;	
 }
 
 function factorial() {
