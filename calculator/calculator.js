@@ -1,17 +1,33 @@
-function add () {
-	
+function add (a, b, ...numbers) {
+    let sum = a + b;
+    for (let i = 0; i < numbers.length; i++) {
+   	sum += numbers[i]; 
+    }
+return sum;
 }
 
-function subtract () {
-	
+function subtract (a, b, ...numbers) {
+    let difference = a - b;
+    for (let i = 0; i < numbers.length; i++) {
+   	difference -= numbers[i]; 
+    }
+return difference;
 }
 
-function sum () {
-	
+function sum(a, ...numbers) {
+let sum = a;
+    for (let i = 0; i < numbers.length; i++) {
+   sum += numbers[i]; 
+    }
+return sum;
 }
 
-function multiply () {
-	
+function multiply (a, b, ...numbers) {
+ let product = a * b;
+    for (let i = 0; i < numbers.length; i++) {
+   product *= numbers[i]; 
+    }
+return product;
 }
 
 function power() {
