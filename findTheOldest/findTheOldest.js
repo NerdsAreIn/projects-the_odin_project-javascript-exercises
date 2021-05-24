@@ -1,13 +1,16 @@
-let findTheOldest = function(people) {
+const findTheOldest = function(peoples) {
     let oldest;
     let age1;
     let age2;
-    const peopleSorted = people.sort((personA, personB) => {
+    const currentYear = new Date().getFullYear();
+    const peopleSorted = peoples.sort((personA, personB) => {
         age1 = personA.yearOfDeath - personA.yearOfBirth;
         age2 = personB.yearOfDeath - personB.yearOfBirth;
         if (personA.yearOfDeath == null) {
-            let currentYear = new Date().getFullYear();
             age1 = currentYear - personA.yearOfBirth;
+	}
+        if (personB.yearOfDeath == null) {
+	    age2 = currentYear - personB.yearOfBirth;	
         }
         if (age1 < age2) {
             return 1;
