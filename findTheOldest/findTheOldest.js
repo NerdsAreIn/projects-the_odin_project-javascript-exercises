@@ -1,9 +1,9 @@
-const findTheOldest = function(peoples) {
+const findTheOldest = function(people) {
     let oldest;
     let age1;
     let age2;
     const currentYear = new Date().getFullYear();
-    const peopleSorted = peoples.sort((personA, personB) => {
+    const peopleSorted = people.sort((personA, personB) => {
         age1 = personA.yearOfDeath - personA.yearOfBirth;
         age2 = personB.yearOfDeath - personB.yearOfBirth;
         if (personA.yearOfDeath == null) {
@@ -21,4 +21,4 @@ const findTheOldest = function(peoples) {
 }
 
 
-module.exports = findTheOldest
+module.exports = findTheOldest;
